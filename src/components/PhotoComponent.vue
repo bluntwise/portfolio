@@ -2,7 +2,7 @@
 
 <template>
   <div class="photo-container">
-    <img src="/AlanPresentation.png" class="photo"/>
+    <img src="@/assets/images/AlanPresentation.png" class="photo"/>
     <span>Alan Dely</span>
   </div>
 </template>

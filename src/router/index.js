@@ -7,7 +7,7 @@ import ExperienceView from '@/views/ExperienceView.vue';
 import ProjectsView from '@/views/ProjectsView.vue';
 
 const routes = [
-    { 'path' : '/', redirect : '/about'},
+    { 'path' : '/portfolio', redirect : '/about'},
     { 'path' : '/about', component : AboutView},
     { 'path' : '/experience', component : ExperienceView},
     { 'path' : '/projects', component : ProjectsView},
@@ -15,7 +15,7 @@ const routes = [
 ]
 
 const router = createRouter({
-    history : createWebHistory(),
+    history : createWebHistory(import.meta.env.BASE_URL),
     routes
 })
 

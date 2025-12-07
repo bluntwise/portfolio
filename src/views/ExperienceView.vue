@@ -1,6 +1,8 @@
-<script setup lang="ts">
+<script setup>
 import TimeLineComponent from '@/components/TimeLineComponent.vue';
-
+import orangeLogo from '@/assets/images/orange.png'
+import ubsLogo from '@/assets/images/ubs.png'
+import enssatLogo from '@/assets/images/enssat.png'
 const itemsEducation = [
         {
             year : "Today", 
@@ -11,7 +13,7 @@ const itemsEducation = [
                 "Cybersécurité", 
                 "Gestion des projets"
             ],
-            logo : "portfolio/Enssat_logo.png"
+            logo : enssatLogo
         },
         {
             year: "2024",
@@ -22,7 +24,7 @@ const itemsEducation = [
                 "Structures de Données",
                 "Introduction au Web"
             ],
-            logo: "portfolio/ubs.png"
+            logo: ubsLogo
         }
         
     ]
@@ -39,7 +41,7 @@ const itemsWork = [
                 "Création de visualisations ", 
                 "Gestion des projets"
             ],
-            logo : "portfolio/orange.png"
+            logo : orangeLogo
         }
         
     ]
