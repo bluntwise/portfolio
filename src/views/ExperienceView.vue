@@ -11,7 +11,7 @@ const itemsEducation = [
                 "Cybersécurité", 
                 "Gestion des projets"
             ],
-            logo : "/Enssat_logo.png"
+            logo : "portfolio/Enssat_logo.png"
         },
         {
             year: "2024",
@@ -22,7 +22,7 @@ const itemsEducation = [
                 "Structures de Données",
                 "Introduction au Web"
             ],
-            logo: "/ubs.png"
+            logo: "portfolio/ubs.png"
         }
         
     ]
@@ -39,7 +39,7 @@ const itemsWork = [
                 "Création de visualisations ", 
                 "Gestion des projets"
             ],
-            logo : "/Enssat_logo.png"
+            logo : "portfolio/orange.png"
         }
         
     ]
