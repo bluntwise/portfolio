@@ -7,7 +7,7 @@ import ExperienceView from '@/views/ExperienceView.vue';
 import ProjectsView from '@/views/ProjectsView.vue';
 
 const routes = [
-    { 'path' : '/portfolio', redirect : '/about'},
+    { 'path' : '/', redirect : '/about'},
     { 'path' : '/about', component : AboutView},
     { 'path' : '/experience', component : ExperienceView},
     { 'path' : '/projects', component : ProjectsView},

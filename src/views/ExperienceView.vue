@@ -24,7 +24,8 @@ const itemsEducation = [
                 "Structures de Données",
                 "Introduction au Web"
             ],
-            logo: ubsLogo
+            logo: ubsLogo,
+            
         }
         
     ]
@@ -41,8 +42,10 @@ const itemsWork = [
                 "Création de visualisations ", 
                 "Gestion des projets"
             ],
-            logo : orangeLogo
-        }
+            logo : orangeLogo,
+            
+        },
+    
         
     ]
 

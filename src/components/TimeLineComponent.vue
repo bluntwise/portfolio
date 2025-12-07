@@ -29,6 +29,12 @@
             </div>
             
         </div>
+        <div class="timeline-left">
+            <span class="year">2024</span>
+            <span class="dot"></span>
+        </div>
+        
+
 
         
     </div>
@@ -79,6 +85,7 @@
     gap: 5rem;
     position: relative;
     padding-left: 6rem;
+
 }
 
 .start-dot {
@@ -97,7 +104,7 @@
     position: absolute;
     left: 3.5rem;
     top: 1.5em;
-    bottom: 0;
+    bottom: 1em;
     width: 2px;
     background: #444;
 
@@ -121,7 +128,7 @@
     display: flex;
     gap: 3rem;
     width: 50em;
-    
+    padding-top: 2em;
     align-items: center;
 }
 
@@ -153,7 +160,7 @@
     transform: translateX(-43%);
 }
 .logo {
-    width: 12em;
+    width: 10em;
     margin-top: 1rem;
 }
 
@@ -177,4 +184,28 @@
 .skills li{
     margin: 0.5em;
 }
-</style>s
+
+.end-dot {
+    width: 1em;
+    height: 1em;
+    background: var(--color-primary);
+    border-radius: 50%;
+    position: absolute;
+    left: 3.5rem;        
+    bottom: 0;
+    transform: translateX(-43%);
+}
+
+.yearStart{
+    position: absolute;
+    left: 3.5em; 
+    bottom: 0; 
+    transform: translateX(20%);
+    font-family: 'Inter', sans-serif;
+    color : var(--color-primary);
+    font-weight: 500;
+    font-size: 1.2em;
+
+}
+
+</style>
