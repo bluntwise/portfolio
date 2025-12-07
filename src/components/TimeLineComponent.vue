@@ -1,9 +1,10 @@
 <template>
-
     <div class="timeline">
 
+    <span class="timeline-title">{{ props.title }}</span>
+    <div class="timeline-block">
         <div 
-            v-for="(item, index) in items"
+            v-for="(item, index) in props.items"
             :key="index"
             class="timeline-row">
 
@@ -31,38 +32,47 @@
 
         
     </div>
+</div>
 </template>
 
 <script setup>
-    const items = [
-        {
-            year : "Today", 
-            title : "Ingénieur par apprentissage",
-            domain : "Informatique",
-            tasks : [
-                "Analyse de données", 
-                "Cybersécurité", 
-                "Gestion des projets"
-            ],
-            logo : "/Enssat_logo.png"
+
+    const props = defineProps({
+        items : {
+            type : Array,
+            require : true
         },
-        {
-            year: "2024",
-            title: "Cycle Universitaire Préparatoire aux Grandes Ecoles",
-            domain: "Mathématiques & Informatique",
-            tasks: [
-                "Programmation Orientée Objet",
-                "Structures de Données",
-                "Introduction au Web"
-            ],
-            logo: "/ubs.png"
+        title : {
+            type : String,
+            require : false
+        },
+        yearStart : {
+            type : Number,
+            require : false
         }
+
+    })
         
-    ]
+    
 </script>
 
 <style scoped>
-.timeline {
+
+.timeline-title{
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 2.8em;
+    font-weight: 500;
+
+    color: var(--color-primary);
+}
+
+.timeline{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.timeline-block {
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -71,7 +81,18 @@
     padding-left: 6rem;
 }
 
-.timeline::before {
+.start-dot {
+    width: 1em;
+    height: 1em;
+    background: var(--color-primary);
+    border-radius: 50%;
+    position: absolute;
+    left: 3.5rem;
+    transform: translateX(-43%);
+}
+
+
+.timeline-block::before {
     content: "";
     position: absolute;
     left: 3.5rem;
@@ -99,6 +120,8 @@
 .timeline-content {
     display: flex;
     gap: 3rem;
+    width: 50em;
+    
     align-items: center;
 }
 
