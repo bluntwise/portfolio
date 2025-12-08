@@ -16,7 +16,7 @@ import PhotoComponent from './PhotoComponent.vue';
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
 }
 
 

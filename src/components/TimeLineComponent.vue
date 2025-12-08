@@ -66,9 +66,8 @@
 
 .timeline-title{
     font-family: 'Advent Pro', sans-serif;
-    font-size: 2.8em;
+    font-size: 2.9em;
     font-weight: 500;
-
     color: var(--color-primary);
 }
 
@@ -76,6 +75,7 @@
     display: flex;
     flex-direction: column;
     gap: 2em;
+    
 }
 
 .timeline-block {
