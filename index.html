@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
 
     <header>
         <nav>
+            <span class="logo">Portfolio</span>
+            <button class="burger" onclick="document.querySelector('ul').classList.toggle('open')">
+            <span></span><span></span><span></span>
+            </button>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Projects</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Projects</a></li>
             </ul>
         </nav>
     </header>
