@@ -96,6 +96,7 @@ img {
 }
 
 .about-card {
+  width: 80%;
   padding: 20px;
   border-radius: 8px;
 
@@ -139,151 +140,148 @@ img {
 }
 
 
-/* Experience Section */
 
-.experience-grid {
+
+
+
+/* Card for experience and education */
+
+.card-grid {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
 
-
-.experience-card {
-  background-color: #f9f9f9;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.card {
+  background-color: rgba(249, 249, 249, 0.7);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
   padding: 20px 24px;
-}
-
-.experience-body {
+  width: 65%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 16px;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-.experience-info {
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: rgba(249, 249, 249, 0.95);
+}
+
+.card-info {
   display: flex;
   flex-direction: column;
   gap: 6px;
+  flex: 1;
 }
 
-.experience-date {
+.card-date {
   font-size: 0.8rem;
   color: var(--color-primary);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  opacity: 0.75;
 }
 
-.experience-title {
+.card-title {
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--color-primary);
   margin: 0;
+  opacity: 0.95;
 }
 
-.experience-company {
+.card-subtitle {
   font-size: 0.9rem;
   color: var(--color-primary);
-  opacity: 0.7;
+  opacity: 0.65;
 }
 
-.experience-desc {
+.card-desc {
+  font-size: 0.9rem;
+  color: var(--color-primary);
+  opacity: 0.75;
   margin-top: 6px;
-  font-size: 0.9rem;
-  color: var(--color-primary);
-  opacity: 0.85;
+  text-align: justify;
+  width: 90%;
 }
 
-.experience-logo {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
-
-/* Education Section */
-
-.education-date {
-  font-weight: 600;
-  font-size: 1.2em;
-  background-color: var(--color-primary);
-  color: var(--color-secondary);
-  text-transform: uppercase;
-  border: 1px solid var(--color-primary);
-  padding: 4px 12px;
-  border-radius: 1em;
-  width: fit-content;
-}
-
-.education-info {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-.education-title {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--color-primary);
-  margin: 0;
-}
-.education-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.education-card {
-  border: 1px solid var(--color-primary);
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  padding: 20px 24px;
-}
-
-.education-body {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-}
-
-.education-logo {
+.card-logo {
   width: 120px;
   height: 100px;
   object-fit: contain;
   flex-shrink: 0;
+  opacity: 0.85;
 }
+
+
+/* Responsive Desktop */
+@media (max-width: 1280px) {
+  .container {
+    width: 90%;
+  }
+}
+
+
 /* Responsive Tablet */
 @media (max-width: 900px) {
-  body{
+  body {
     line-height: 1.3;
+  }
+
+  .container {
+    width: 90%;
   }
 
   .about-grid {
     grid-template-columns: 1fr;
   }
 
+  .about-card {
+    width: 90%;
+  }
+
   .about-info {
     margin-top: 30px;
   }
 
-  .container{
-    width: 90%;
+  .card {
+    width: 65%;
   }
 
+  .experience-orange{
+    width: 80px;
+    height: 80px;
+  }
+}
+/* Responsive Tablet Small */
+@media (max-width: 768px) {
+  .card {
+    width: 95%;
+  }
+
+  .about-card {
+    width: 100%;
+  }
+
+  .card-desc {
+    width: 100%;
+  }
 }
 
-
-
-
 /* Responsive Mobile */
-@media (max-width: 480px){
+@media (max-width: 480px) {
+  body {
+    line-height: 1.25;
+  }
 
-  body{
-      line-height: 1.25;
+  .container {
+    width: 85%;
   }
 
   .section-title {
@@ -295,32 +293,36 @@ img {
     flex-direction: column;
     align-items: center;
     gap: 1em;
-    background-color: #f9f9f9; 
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
 
   #enssat-card {
     display: flex;
     flex-direction: column-reverse;
-
   }
 
-  .container {
-    width: 90%;
-  }
 
-  .education-body {
+  .card {
     flex-direction: column;
     align-items: center;
     gap: 12px;
+    width: 100%;
   }
 
-  .education-logo{
+  .card-logo {
     width: 100px;
     height: 100px;
   }
 
-  
+  .card-desc {
+    width: 100%;
+  }
 
 
+  .orange{
+    width: 80px;
+    height: 80px;
+  }
 }
+
