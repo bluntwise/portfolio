@@ -49,8 +49,8 @@ img {
 /* Utilities */
 
 .container {
-  width: 65%;
-  max-width: 1100px;
+  width: 95%;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -67,16 +67,21 @@ img {
 
 /* About */
 
+.container-about {
+  width:70%;
+}
+
 .about-grid{
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 .about-text{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3em;
+  gap: 20px;
 }
 
 .enssat {
@@ -87,7 +92,7 @@ img {
   width: 6em;
 }
 
-.binaire{
+.computer_coding{
   width: 7em;
 }
 
@@ -97,7 +102,7 @@ img {
 
 .about-card {
   width: 80%;
-  padding: 20px;
+  /* s */
   border-radius: 8px;
 
   display: flex;
@@ -105,7 +110,7 @@ img {
   gap: 4em;
   align-items: center;
 
-  min-height: 150px;
+  min-height: 120px;
 }
 
 .about-text .btn {
@@ -140,191 +145,6 @@ img {
 }
 
 
-
-
-
-
-/* Card for experience and education */
-
-.card-grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.card {
-  background-color: rgba(249, 249, 249, 0.7);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  border-radius: 8px;
-  padding: 20px 24px;
-  width: 65%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-  transition: box-shadow 0.3s ease, background-color 0.3s ease;
-}
-
-.card:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  background-color: rgba(249, 249, 249, 0.95);
-}
-
-.card-info {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  flex: 1;
-}
-
-.card-date {
-  font-size: 0.8rem;
-  color: var(--color-primary);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  opacity: 0.75;
-}
-
-.card-title {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--color-primary);
-  margin: 0;
-  opacity: 0.95;
-}
-
-.card-subtitle {
-  font-size: 0.9rem;
-  color: var(--color-primary);
-  opacity: 0.65;
-}
-
-.card-desc {
-  font-size: 0.9rem;
-  color: var(--color-primary);
-  opacity: 0.75;
-  margin-top: 6px;
-  text-align: justify;
-  width: 90%;
-}
-
-.card-logo {
-  width: 120px;
-  height: 100px;
-  object-fit: contain;
-  flex-shrink: 0;
-  opacity: 0.85;
-}
-
-
-/* Responsive Desktop */
-@media (max-width: 1280px) {
-  .container {
-    width: 90%;
-  }
-}
-
-
-/* Responsive Tablet */
-@media (max-width: 900px) {
-  body {
-    line-height: 1.3;
-  }
-
-  .container {
-    width: 90%;
-  }
-
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .about-card {
-    width: 90%;
-  }
-
-  .about-info {
-    margin-top: 30px;
-  }
-
-  .card {
-    width: 65%;
-  }
-
-  .experience-orange{
-    width: 80px;
-    height: 80px;
-  }
-}
-/* Responsive Tablet Small */
-@media (max-width: 768px) {
-  .card {
-    width: 95%;
-  }
-
-  .about-card {
-    width: 100%;
-  }
-
-  .card-desc {
-    width: 100%;
-  }
-}
-
-/* Responsive Mobile */
-@media (max-width: 480px) {
-  body {
-    line-height: 1.25;
-  }
-
-  .container {
-    width: 85%;
-  }
-
-  .section-title {
-    font-size: 1.5rem;
-  }
-
-  .about-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
-    background-color: #f9f9f9;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-
-  #enssat-card {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-
-  .card {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    width: 100%;
-  }
-
-  .card-logo {
-    width: 100px;
-    height: 100px;
-  }
-
-  .card-desc {
-    width: 100%;
-  }
-
-
-  .orange{
-    width: 80px;
-    height: 80px;
-  }
-}
 
 
 /* Menu */
@@ -389,3 +209,269 @@ nav {
 
     ul a { display: block; padding: 1rem 1.5rem; border-top: 1px solid #f0f0f0; }
   }
+
+
+
+/* Card for experience and education */
+
+.card-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: rgba(249, 249, 249, 0.7);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  padding: 20px 24px;
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: rgba(249, 249, 249, 0.95);
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.card-date {
+  font-size: 0.8rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.75;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0;
+  opacity: 0.95;
+}
+
+.card-subtitle {
+  font-size: 0.9rem;
+  color: var(--color-primary);
+  opacity: 0.65;
+}
+
+.card-desc {
+  font-size: 0.9rem;
+  color: var(--color-primary);
+  opacity: 0.75;
+  margin-top: 6px;
+  text-align: justify;
+  width: 90%;
+}
+
+.card-logo {
+  width: 120px;
+  height: 100px;
+  object-fit: contain;
+  flex-shrink: 0;
+  opacity: 0.85;
+}
+
+
+
+/* Projects */
+
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.project-card {
+  display: flex;
+  width: 70%;
+}
+
+.project-img{
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+  margin-left: 10px;
+}
+
+.project-desc{
+  width: 100%;
+  text-align: justify;
+}
+
+.project-tech{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+
+}
+
+.project-tech-icon{
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-right: 8px;
+}
+
+
+
+/* Responsive Desktop */
+@media (max-width: 1280px) {
+  .container {
+    width: 90%;
+  }
+
+  .project-card {
+    width: 95%;
+  }
+}
+
+
+/* Responsive Tablet */
+@media (max-width: 900px) {
+  body {
+    line-height: 1.3;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card {
+    width: 90%;
+  }
+
+  .about-info {
+    margin-top: 30px;
+  }
+
+  .card {
+    width: 65%;
+  }
+
+  .card-info {
+    margin-right: 30px;
+  }
+
+  .experience-orange{
+    width: 80px;
+    height: 80px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+}
+/* Responsive Tablet Small */
+@media (max-width: 768px) {
+  .card {
+    width: 95%;
+  }
+
+  .about-card {
+    width: 100%;
+  }
+
+  .card-desc {
+    width: 100%;
+  }
+
+  .project-card {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .project-img {
+    width: 200px;
+    height: 200px;
+    object-fit: fill;
+  }
+
+}
+
+/* Responsive Mobile */
+@media (max-width: 480px) {
+  body {
+    line-height: 1.25;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .about-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    /* background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+  }
+
+  #enssat-card {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .card-logo {
+    width: 100px;
+    height: 100px;
+    
+  }
+
+  .card-desc {
+    width: 100%;
+  }
+
+  .orange{
+    width: 80px;
+    height: 80px;
+  }
+
+  .card {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .project-card {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+
+}

@@ -16,16 +16,16 @@
             <span></span><span></span><span></span>
             </button>
             <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <section id="about" class="section">
-        <div class="container">
+        <div class="container-about container">
             <h2 class="section-title"><span>Bonjour, je m'appelle Alan Dely.</span></h2>
             <div class="about-grid">
                 <div class="about-text">
@@ -37,7 +37,7 @@
                         ce domaine tout seul puis avec l’école. Depuis je n’ai cessé 
                         d’agrandir mes connaissances et j’aimerais en faire mon métier.
                         </p>
-                        <img src="images/binaire.png" class="about-img binaire">
+                        <img src="images/computer_coding-clean.png" class="about-img computer_coding">
                     </div>
 
                     <div class="about-card" id="enssat-card">
@@ -122,25 +122,64 @@
 
     <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title"> <span>Projects</span></h2>
-            <p>This is a sample webpage created for demonstration purposes.</p>
+            <h2 class="section-title project-title"> <span>Projects</span></h2>
 
-            <div class="projects-list">
+            <div class="projects-grid">
+
+                
                 <div class="project-card">
-                    <h3 class="project-title">Project 1</h3>
-                    <p class="project-desc">Description of project 1.</p>
+
+                    <img src="images/collabora.png" class="project-img" alt="Collabora">
+
+                    <div class="project-info">
+                    <h3 class="project-title">Collabora</h3>
+                    <p class="project-desc">Ce projet est une application web permettant la gestion d'utilisateurs 
+                        et de projets à travers une API REST, construite avec Fastify et Prisma en JavaScript. 
+                        Le frontend interagit avec cette API pour offrir une interface conviviale, permettant 
+                        notamment l'ajout, la modification et la gestion sécurisée des utilisateurs 
+                        et des projets.
+                        
+                    </p>
+
+                    <div class="project-tech">
+                        <img src="images/js.png" class="project-tech-icon" alt="JavaScript">
+                        <img src="images/fastify.png" class="project-tech-icon" alt="Fastify">
+                        <img src="images/postman.png" class="project-tech-icon" alt="Postman">
+                        <img src="images/vue.png" class="project-tech-icon" alt="Vue.js">
+                        <img src="images/mongodb.png" class="project-tech-icon" alt="MongoDB">
+                    </div>
+
+                    </div>  
                 </div>
+
                 <div class="project-card">
-                    <h3 class="project-title">Project 2</h3>
-                    <p class="project-desc">Description of project 2.</p>
+
+                    <img src="images/location-velos.png" class="project-img" alt="Location de vélos">
+
+                    <div class="project-info">
+                    <h3 class="project-title">Location de vélos</h3>
+                    <p class="project-desc">
+                        Ce projet consiste en une application web dédiée à la location de vélos. Elle est 
+                        structurée en deux parties complémentaires : un backend exposant une API REST et 
+                        un frontend disponible interagit avec cette API. Cela a été réalisé à l’ENSSAT.
+                    </p>
+
+                    <div class="project-tech">
+                        <img src="images/js.png" class="project-tech-icon" alt="JavaScript">
+                        <img src="images/ex.png" class="project-tech-icon" alt="Express">
+                        <img src="images/postman.png" class="project-tech-icon" alt="Postman">
+                        <img src="images/vue.png" class="project-tech-icon" alt="Vue.js">
+                        <img src="images/postgresql.png" class="project-tech-icon" alt="PostgreSQL">
+                    </div>
+
+                    </div>  
                 </div>
-                <div class="project-card">
-                    <h3 class="project-title">Project 3</h3>
-                    <p class="project-desc">Description of project 3.</p>
-                </div>
+
+
+
         </div>
     </section>
-    <section class="contact section">
+    <section class="contact section" id="contact">
         <div class="container">
             <h2 class="section-title"><span>Contact</span></h2>
             <p>This is a sample webpage created for demonstration purposes.</p>
