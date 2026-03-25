@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -180,9 +181,28 @@
         </div>
     </section>
     <section class="contact section" id="contact">
-        <div class="container">
-            <h2 class="section-title"><span>Contact</span></h2>
-            <p>This is a sample webpage created for demonstration purposes.</p>
+        <div class="contact-container container ">
+            <!-- <h2 class="section-title"><span>Contact</span></h2> -->
+            <div class="contact-card">
+
+                <div class="contact-social-media">
+                    
+                    <div class="contact-logos">
+                        <img src="images/linkedin.png" class="contact-logo" alt="LinkedIn">
+                        <img src="images/github.png" class="contact-logo" alt="GitHub">
+                    </div>
+                    <p>alandely11@gmail.com</p>
+                    
+                </div>
+                <form class="contact-form">
+                    <span class="form-title">Formulaire de contact</span>
+                    <input class="input-field" type="text" placeholder="Votre nom" required>
+                    <input class="input-field" type="email" placeholder="Votre email" required>
+                    <textarea class="input-field field-message" placeholder="Votre message" required></textarea>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+
+            </div>
             
         </div>
     </section>
