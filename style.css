@@ -63,7 +63,7 @@ img {
 }
 
 .section-title {
-  font-size: 2rem;
+  font-size: 2em;
   font-weight: 700;
   text-align: center;
   margin-bottom: 50px;
@@ -72,7 +72,7 @@ img {
 /* ----------------- About ----------------- */
 
 .container-about {
-  width:70%;
+  width:45%;
 }
 
 .about-grid{
@@ -139,16 +139,15 @@ img {
   background-color: var(--color-primary);
   color: var(--color-secondary);
   border-radius: 4px;
-  border: 1px solid transparent;
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
   background-color: var(--color-secondary);
-  color: var(--color-primary);
-  border-color: var(--color-primary); 
-  transform: scale(1.05);
+  color: var(--color-primary); /* ← ajoute ça */
+  border: 1px solid var(--color-primary);
 }
+
 
 
 
@@ -173,9 +172,18 @@ nav {
     text-decoration: none;
     color: #444;
     font-size: 0.9rem;
+    padding: 10px 10px;
+    border-radius: 10px;
   }
 
-  ul a:hover { color: #000; }
+  
+
+  ul a:hover { 
+    color: #000;
+    background-color: var(--color-secondary);
+    
+    
+   }
 
   .burger {
     display: none;
@@ -224,6 +232,7 @@ nav {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  width: 55%;
 }
 
 .card {
@@ -231,7 +240,7 @@ nav {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
   padding: 20px 24px;
-  width: 65%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -385,12 +394,8 @@ nav {
   height: 100px;
   object-fit: contain;
   opacity: 0.85;
-  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-.contact-logo:hover {
-  transform: scale(1.1);
-}
 .form-title {
   font-size: 1.2rem;
   font-weight: 600;
@@ -421,6 +426,22 @@ nav {
   height: 150px;
 }
 
+
+@media (max-width: 1900px) {
+  .container-about {
+    width: 60%;
+  }
+
+}
+
+@media (max-width: 1600px) {
+  .container-about {
+    width: 70%;
+  }
+
+}
+
+
 /* ----------------- Responsive Desktop ----------------- */
 @media (max-width: 1280px) {
   .container {
@@ -439,6 +460,14 @@ nav {
     width: 100%;
   }
 
+  .card-grid{
+    width: 100%;
+  }
+
+  .card {
+    width: 70%;
+  }
+
 
 
 
@@ -452,7 +481,7 @@ nav {
   }
 
   .container {
-    width: 95%;
+    width: 90%;
   }
 
   .about-grid {
@@ -465,10 +494,6 @@ nav {
 
   .about-info {
     margin-top: 30px;
-  }
-
-  .card {
-    width: 65%;
   }
 
   .card-info {
@@ -487,9 +512,20 @@ nav {
   .contact-container {
     width: 100%;
   }
+
+  .card-grid{
+    width: 100%
+  }
+
+  .card {
+    width: 80%;
+  }
 }
 /* Responsive Tablet Small */
 @media (max-width: 768px) {
+  .card-grid {
+    width: 100%;
+  }
   .card {
     width: 95%;
   }
@@ -555,9 +591,7 @@ nav {
     width: 95%;
   }
 
-  .section-title {
-    font-size: 1.5rem;
-  }
+  
 
   .about-card {
     display: flex;
