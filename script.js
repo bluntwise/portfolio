@@ -6,12 +6,12 @@ function switchLanguage() {
   
   if (isEnglish) {
     // On est en anglais, go to français
-    const newPath = currentPage.replace('index-en.html', 'index-fr.html');
+    const newPath = currentPage.replace('index-en.html', 'index.html');
     window.location.href = newPath;
   } else {
     // On est en français (ou root), go to anglais
-    if (currentPage.endsWith('index-fr.html')) {
-      const newPath = currentPage.replace('index-fr.html', 'index-en.html');
+    if (currentPage.endsWith('index.html')) {
+      const newPath = currentPage.replace('index.html', 'index-en.html');
       window.location.href = newPath;
     } else if (currentPage.endsWith('/') || currentPage.endsWith('/portfolio/')) {
       // Si on est à la racine, redirige vers la version anglaise
