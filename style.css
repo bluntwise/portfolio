@@ -140,6 +140,8 @@ img {
   color: var(--color-secondary);
   border-radius: 4px;
   transition: background-color 0.3s ease;
+  border: 1px solid transparent; /* 👈 IMPORTANT */
+
 }
 
 .btn:hover {
@@ -184,6 +186,24 @@ nav {
     
     
    }
+
+  .lang-switcher {
+    background: none;
+    border: 1px solid #444;
+    color: #444;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .lang-switcher:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border-color: var(--color-primary);
+  }
 
   .burger {
     display: none;
@@ -394,6 +414,12 @@ nav {
   height: 100px;
   object-fit: contain;
   opacity: 0.85;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.contact-logo:hover{
+  transform: scale(1.1);
+  opacity: 1;
 }
 
 .form-title {

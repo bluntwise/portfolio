@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Dely</title>
+    <link rel="icon" href="images/portfolio_.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <span class="logo">Portfolio</span>
+            <button class="burger" onclick="document.querySelector('ul').classList.toggle('open')">
+            <span></span><span></span><span></span>
+            </button>
+            <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button class="lang-switcher" onclick="switchLanguage()">FR</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container-about container">
+            <h2 class="section-title"><span>Hello, my name is Alan Dely.</span></h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    
+                    <div class="about-card">
+                        <p>
+                        Welcome to my portfolio! I have been passionate about 
+                        computer science since I was 10 years old. I’ve always had 
+                        a natural curiosity for this field, first on my own and then 
+                        through school. Since then, I have continuously expanded my 
+                        knowledge and I would like to make it my career.
+                        </p>
+                        <img src="images/computer_coding-clean.png" class="about-img computer_coding">
+                    </div>
+
+                    <div class="about-card" id="enssat-card">
+                        <img src="images/Enssat_logo.png" class="about-img enssat">
+                        <p>I am a student at ENSSAT in Lannion, studying computer science through an apprenticeship program. I enjoy developing new projects in this field, which is why I chose this path.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <p>I am currently working as an apprentice at Orange in Lannion. After nearly 7 months, I have discovered data analysis. I work with technologies such as Elasticsearch, Kibana, Docker, and Python for data analysis.</p>
+                        <img src="images/Orange_logo.svg.png" class="about-img orange"> 
+                    </div>
+                
+                <a href="assets/cv.pdf" class="btn btn-primary" download>
+                    <i class="fas fa-download"></i> Download my CV
+                </a>
+            </div>
+
+        </div>
+        
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title"><span>Experience</span></h2>
+            
+            <div class="card-grid">
+
+                <div class="card">
+                    <div class="card-info">
+                        <span class="card-date">2024 – Present</span>
+                        <h3 class="card-title">Data Analyst</h3>
+                        <span class="card-subtitle">Orange — Lannion</span>
+                        <p class="card-desc">
+                            Data analysis using Elasticsearch, Kibana, Docker, and Python.
+                        </p>
+                    </div>
+                    <img src="images/Orange_logo.svg.png" class="experience-orange card-logo" alt="Orange">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title"><span>Education</span></h2>
+
+            <div class="card-grid">
+                
+                <div class="card">
+                    <div class="card-info">
+                        <span class="card-date">2022 - 2024</span>
+                        <h3 class="card-title">CUPGE</h3>
+                        <p class="card-desc">Preparatory class for engineering schools in mathematics and computer science</p>
+                    </div>
+                    <img src="images/ubs.png" class="card-logo" alt="Université Bretagne Sud">
+                </div>
+
+                <div class="card">
+                    <div class="card-info">
+                        <span class="card-date">2024 - 2027</span>
+                        <h3 class="card-title">Computer Engineering Degree</h3>
+                        <p class="card-desc">Web development, databases, embedded systems, networks, cybersecurity, artificial intelligence, project management.</p>
+                    </div>
+                    <img src="images/Enssat_logo.png" class="card-logo" alt="enssat">
+                </div>
+        </div>  
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title project-title"><span>Projects</span></h2>
+
+            <div class="projects-grid">
+
+                <div class="project-card">
+
+                    <img src="images/collabora.png" class="project-img" alt="Collabora">
+
+                    <div class="project-info">
+                    <h3 class="project-title">Collabora</h3>
+                    <p class="project-desc">
+                        This project is a web application for managing users and projects through a REST API, built with Fastify and Prisma in JavaScript. 
+                        The frontend interacts with this API to provide a user-friendly interface, allowing the creation, modification, and secure management of users and projects.
+                    </p>
+
+                    <div class="project-tech">
+                        <img src="images/js.png" class="project-tech-icon" alt="JavaScript">
+                        <img src="images/fastify.png" class="project-tech-icon" alt="Fastify">
+                        <img src="images/postman.png" class="project-tech-icon" alt="Postman">
+                        <img src="images/vue.png" class="project-tech-icon" alt="Vue.js">
+                        <img src="images/mongodb.png" class="project-tech-icon" alt="MongoDB">
+                    </div>
+
+                    </div>  
+                </div>
+
+                <hr class="project-divider">
+
+                <div class="project-card">
+
+                    <img src="images/location-velos.png" class="project-img" alt="Bike rental">
+
+                    <div class="project-info">
+                    <h3 class="project-title">Bike Rental</h3>
+                    <p class="project-desc">
+                        This project is a web application dedicated to bike rentals. It is structured in two complementary parts: a backend exposing a REST API and a frontend interacting with this API. This project was developed at ENSSAT.
+                    </p>
+
+                    <div class="project-tech">
+                        <img src="images/js.png" class="project-tech-icon" alt="JavaScript">
+                        <img src="images/ex.png" class="project-tech-icon" alt="Express">
+                        <img src="images/postman.png" class="project-tech-icon" alt="Postman">
+                        <img src="images/vue.png" class="project-tech-icon" alt="Vue.js">
+                        <img src="images/postgresql.png" class="project-tech-icon" alt="PostgreSQL">
+                    </div>
+
+                    </div>  
+                </div>
+
+        </div>
+    </section>
+
+    <section class="contact section" id="contact">
+        <div class="contact-container container">
+            <div class="contact-card">
+
+                <div class="contact-social-media">
+                    
+                    <div class="contact-logos">
+                        <a href="https://www.linkedin.com/in/alan-dely-25384a2b5/"><img src="images/linkedin.png" class="contact-logo" alt="LinkedIn"></a>
+                        <a href="https://github.com/bluntwise"><img src="images/github.png" class="contact-logo" alt="GitHub"></a>
+                    </div>
+                    <p>alandely11@gmail.com</p>
+                    
+                </div>
+
+                <form class="contact-form" action="https://formspree.io/f/xykbyogr" method="POST">
+                    <span class="form-title">Contact Form</span>
+                    <input class="input-field" type="text" name="name" placeholder="Your name" required>
+                    <input class="input-field" type="email" name="email" placeholder="Your email" required>
+                    <textarea class="input-field field-message" name="message" placeholder="Your message" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
